@@ -1,0 +1,628 @@
+.page{
+    font-family: 'Gilroy', sans-serif;
+    color: #000;
+    cursor: default;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 15px;
+
+    max-width: 1335px;
+}
+
+/*header*/
+
+.header-wrapper{
+    padding-top: 65px;
+    padding-bottom: 60px;
+
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+
+.header-wrapper::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 460px;
+    z-index: -99;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(181,181,181,1) 100%);
+    border-radius: 20px;
+}
+
+.header-title{
+    margin-bottom: 25px;
+
+    max-width: 1312px;
+    font-size: 64px;
+    line-height: 110%;
+}
+
+.header-subtitle{
+    margin-bottom: 25px;
+
+    font-size: 40px;
+}
+
+.header-subtitle>span{
+    font-weight: 700;
+}
+
+.header-img{
+    margin-bottom: 40px;
+
+    width: 100%;
+}
+
+.header-cards{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.header-card__img{
+    margin-bottom: 20px;
+
+    height: 84px;
+    width: auto;
+}
+
+.header-card__caption{
+    margin-bottom: 15px;
+
+    font-size: 30px;
+}
+
+.header-card__description{
+    font-size: 18px;
+}
+
+
+/*ideal*/
+
+.ideal{
+    margin-bottom: 140px;
+
+    position: relative;
+    min-height: 756px;
+}
+
+.ideal-bg{
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 756px;
+
+    background-image: url("./../img/ideal-bg.png");
+    background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    background-position: center center;
+    border-radius: 20px;
+}
+
+.ideal-wrapper{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    min-height: 620px;
+}
+
+.ideal-title{
+    padding-top: 125px;
+
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 400;
+    max-width: 545px;
+    line-height: 110%;
+}
+
+
+/*benefits*/
+
+.benefits{
+    margin-bottom: 100px;
+}
+
+.benefits-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 75px;
+}
+
+.benefits-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.benefits-card__reverse{
+    position: relative;
+
+    justify-content: unset;
+    top: -115px;
+    flex-direction: column-reverse;
+}
+
+.benefits-card__reverse--down{
+    top: -40px;
+}
+
+.benefits-card__caption{
+    padding-left: 10px;
+    margin-bottom: 45px;
+
+    font-size: 32px;
+    font-weight: 400;
+    width: 90%;
+}
+
+.benefits-card__caption--reverse{
+    margin-bottom: 0;
+    margin-top: 25px;
+}
+
+.benefits-card__img{
+    width: 100%;
+}
+
+/*two-blocks*/
+
+.two-blocks{
+    margin-bottom: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.two-blocks-card{
+    position: relative;
+}
+
+.two-block-card__img{
+    width: 100%;
+}
+
+.two-block-description{
+    position: absolute;
+    bottom: 60px;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 34px;
+}
+
+/*business*/
+
+.business{
+    margin-bottom: 45px;
+
+    position: relative;
+}
+
+.business-bg{
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 756px;
+
+    background-image: url("./../img/business-bg.png");
+    background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    background-position: center center;
+    border-radius: 20px;
+}
+
+.business-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    min-height: 756px;
+}
+
+.business-title{
+    padding-bottom: 253px;
+
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 400;
+    max-width: 517px;
+    line-height: 110%;
+}
+
+/*cinema*/
+
+.cinema{
+    margin-bottom: 45px;
+
+    position: relative;
+}
+
+.cinema-bg{
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 756px;
+
+    background-image: url("./../img/cinema-bg.png");
+    background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    background-position: center center;
+    border-radius: 20px;
+}
+
+.cinema-wrapper{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    min-height: 756px;
+}
+
+.cinema-title{
+    padding-bottom: 55px;
+
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+/*footer*/
+
+.footer{
+    margin-bottom: 45px;
+}
+
+.footer-img{
+    width: 100%;
+    height: auto;
+
+    background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    background-position: center center;
+    border-radius: 20px;
+}
+
+.footer-img-mobile{
+    display: none;
+}
+
+.footer-img-desktop{
+    display: block;
+}
+
+/*media*/
+
+/*for big-desktop*/
+@media (min-width: 2000px){
+
+    .ideal{
+        min-height: 1100px;
+    }
+
+    .ideal-bg{
+        min-height: 1100px;
+    }
+
+    .business-wrapper{
+        min-height: 1100px;
+    }
+
+    .business-bg{
+        min-height: 1100px;
+    }
+
+    .cinema-wrapper{
+        min-height: 1100px;
+    }
+
+    .cinema-bg{
+        min-height: 1100px;
+    }
+}
+
+/*for tablet*/
+@media (max-width: 1100px){
+
+    .benefits-card__caption{
+        font-size: 26px;
+    }
+
+    .two-block-description{
+        font-size: 24px;
+    }
+}
+
+/*for small-tablet*/
+@media (max-width: 768px){
+
+    .header-img{
+        order: -1;
+    }
+    .header-title{
+        order: 2;
+        max-width: 709px;
+        font-size: 34px;
+    }
+    .header-subtitle{
+        margin-bottom: 35px;
+
+        order: 3;
+        font-size: 24px;
+    }
+
+    .header-cards{
+        order: 4;
+    }
+
+    .header-card__img{
+        margin-bottom: 10px;
+
+        height: 50px;
+    }
+
+    .header-card__caption{
+        margin-bottom: 7px;
+
+        font-size: 18px;
+    }
+
+    .header-card__description{
+        font-size: 12px;
+    }
+
+    .ideal{
+        margin-bottom: 30px;
+    }
+
+    .ideal-wrapper{
+        text-align: center;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .ideal-title{
+        padding-top: 0;
+
+        min-width: unset;
+        font-size: 36px;
+    }
+
+    .benefits{
+        margin-bottom: 35px;
+    }
+
+    .benefits-cards{
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .benefits-card__reverse{
+        top: unset;
+    }
+
+    .benefits-card{
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .benefits-card__caption{
+        margin-top: 15px;
+        margin-bottom: 0;
+
+        text-align: center;
+    }
+
+    .two-blocks{
+        padding: 0 15px;
+
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .two-block-description{
+        margin-top: 15px;
+
+        font-size: 26px;
+        text-align: center;
+        position: static;
+        transform: unset;
+    }
+
+    .business-wrapper{
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .business-title{
+        font-size: 40px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .cinema-wrapper{
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .cinema-title{
+        font-size: 40px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+}
+
+/*for mobile*/
+@media (max-width: 576px){
+
+    .header-wrapper{
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+
+    .header-wrapper::before{
+        height: 240px;
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgb(181 181 181 / 52%) 100%);
+    }
+
+    .header-img{
+        margin-bottom: 15px;
+    }
+
+    .header-wrapper{
+        justify-items: center;
+    }
+
+    .header-title{
+        margin-bottom: 10px;
+
+        font-size: 24px;
+        max-width: 500px;
+    }
+
+    .header-subtitle{
+        font-size: 16px;
+    }
+
+    .header-card__img{
+        height: 40px;
+    }
+
+    .header-card__caption{
+        font-size: 12px;
+    }
+
+    .header-card__description{
+        font-size: 8px;
+    }
+
+    .ideal{
+        min-height: 371px;
+    }
+
+    .ideal-wrapper{
+        min-height: 371px;
+    }
+
+    .ideal-bg{
+        background-image: url("./../img/ideal-mobile.png");
+        min-height: 371px;
+        border-radius: 0;
+    }
+
+    .ideal-title{
+        padding-bottom: 40px;
+
+        font-size: 24px;
+    }
+
+    .business{
+        margin-bottom: 20px;
+        min-height: 371px;
+    }
+
+    .business-wrapper{
+        min-height: 371px;
+    }
+
+    .business-bg{
+        background-image: url("./../img/business-mobile.png");
+        min-height: 371px;
+        border-radius: 0;
+    }
+
+    .business-title{
+        padding-bottom: 40px;
+
+        font-size: 24px;
+    }
+
+    .cinema{
+        margin-bottom: 0;
+        min-height: 371px;
+    }
+
+    .cinema-wrapper{
+        min-height: 371px;
+    }
+
+    .cinema-bg{
+        background-image: url("./../img/cinema-mobile.png");
+        min-height: 371px;
+        border-radius: 0;
+    }
+
+    .cinema-title{
+        padding-bottom: 40px;
+
+        font-size: 24px;
+    }
+
+    .footer{
+        margin-bottom: 0;
+    }
+
+    .footer-img-desktop{
+        display: none;
+    }
+
+    .footer-img-mobile{
+        display: block;
+    }
+}
+
+/*for small-mobile*/
+@media (max-width: 400px){
+
+    .header-title{
+        font-size: 20px;
+    }
+
+    .header-subtitle{
+        margin-bottom: 30px;
+
+        font-size: 14px;
+    }
+
+    .header-card__img{
+        height: 30px;
+    }
+
+    .header-card__caption{
+        margin-bottom: 0;
+
+        font-size: 8px;
+    }
+
+    .benefits-card__caption{
+        font-size: 18px;
+    }
+
+    .two-block-description{
+        font-size: 18px;
+        white-space: normal;
+    }
+}
